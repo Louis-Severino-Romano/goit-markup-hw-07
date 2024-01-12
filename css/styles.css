@@ -91,13 +91,17 @@ body {
   background-size: cover;
 }
 .list-svg {
-  display: flex;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
   align-items: center;
   justify-content: center;
   height: 112px;
   background-color: #f4f4fd;
   border-radius: 4px;
   margin-bottom: 8px;
+  }
+  
 }
 .section-header {
   font-size: 56px;
@@ -169,12 +173,19 @@ body {
   text-align: left;
 }
 .section-par {
+  font-weight: 500;
   font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--parcolor);
-  text-align: left;
-  text-transform: capitalize;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  color: var(--slate, #434455);
+
+  @media screen and (min-width: 768px) {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+  }
+
 }
 .section-c-head {
   font-size: 36px;
@@ -376,6 +387,8 @@ body {
     column-gap: 24px;
     row-gap: 72px;
 }
+}
+
 .section-par-team {
   font-size: 16px;
   line-height: 1.5;
@@ -406,7 +419,10 @@ body {
 }
 .list-item {
   /* margin-right: 24px;    */
-  width: calc((100% - 72px) / 4);
+  @media screen and (min-width: 768px)
+  {width: calc((100% - 72px) / 4);}
+  
+  
 }
 .section-c {
   padding: 120px;
