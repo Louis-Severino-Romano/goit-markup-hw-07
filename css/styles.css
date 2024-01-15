@@ -255,7 +255,6 @@ body {
     width: calc((100% - 72px) / 4);
   }
  
- 
 }
 .socmed {
   width: 40px;
@@ -392,11 +391,12 @@ body {
 .foter {
   background-color: var(--grey);
   padding: 100px 0;
+
 }
-/* .foter > .container {
+.foter > .container {
   display: flex;
   align-items: baseline;
-} */
+}
 .span-foter {
   color: #f4f4fd;
 }
