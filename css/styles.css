@@ -351,9 +351,7 @@ body {
 }
 /* footer */
 /* hw4 */
-.footer-wrap {
-  /* margin-right: 120px; */
-}
+
 .footer-socmed {
   font-weight: 500;
   font-size: 16px;
@@ -579,6 +577,15 @@ body {
   letter-spacing: 0.02em;
   max-width: 264px;
   margin-bottom: 16px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+
+  @media screen and (min-width: 1158px) {
+    text-align: left;
+  }
 }
 /* HW5 */
 .active.link {
