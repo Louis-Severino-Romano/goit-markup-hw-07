@@ -34,7 +34,7 @@
           <a href="./index.html" class="nav-logo link"
             >Web<span class="span">Studio</span></a
           >
-          <ul class="list">
+          <ul class="header-menu-list">
             <li class="nav-list-item">
               <a href="./index.html" class="active nav-link-list link">Studio</a>
                           </li>
@@ -47,7 +47,7 @@
           </ul>
         </nav>
         <address class="address">
-          <ul class="list">
+          <ul class="header-address-list list">
             <li class="contact">
               <a href="mailto:info@devstudio.com" class="address-list link"
                 >info@devstudio.com</a
@@ -60,6 +60,104 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-icon" width="32" height="32">
+            <use href="./images/icons.svg#hmb"></use>
+          </svg>
+        </button>
+
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle mod-button-close js-close-menu">
+            <svg class="menu-icon mod-button-close-svg" width="32" height="32">
+              <use href="./images/icons.svg#hmb-close"></use>
+            </svg>
+          </button>
+          <ul class="hamburger-menu-list list">
+            <li class="hamburger-menu-item">
+              <a href="./index.html" class="hamburger-menu-link link menu-active"
+                >Studio</a
+              >
+            </li>
+            <li class="hamburger-menu-item">
+              <a href="./portfolio.html" class="hamburger-menu-link link"
+                >Portfolio</a
+              >
+            </li>
+            <li class="hamburger-menu-item">
+              <a href="#" class="hamburger-menu-link link">Contacts</a>
+            </li>
+          </ul>
+          <div class="hamburger-wrapper">
+            <address class="hamburger-address">
+            <ul class="hamburger-address-list list">
+              <li class="hamburger-address-item">
+              <a
+                href="tel:+110001111111"
+                class="hamburger-address-link highlight link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >+11 (000) 111-11-11</a
+              >
+              </li>
+              <li class="hamburger-address-item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="hamburger-address-link link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >info@devstudio.com</a
+              >
+              </li>
+            </ul>
+            </address>
+          
+            <ul class="hamburger-social-list list">
+            <li class="hamburger-social-item">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hamburger-social-link link"
+                ><svg class="hamburger-social-icon" width="16" height="16">
+                  <use href="./images/icons.svg#instagram"></use></svg></a>
+            </li>
+            <li class="hamburger-social-item">
+                <a
+                href="https://www.twitter.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hamburger-social-link link"
+                ><svg class="hamburger-social-icon" width="16" height="16">
+                  <use href="./images/icons.svg#twitter"></use></svg></a>
+            </li>
+            <li class="hamburger-social-item">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hamburger-social-link link"
+                ><svg class="hamburger-social-icon" width="16" height="16">
+                  <use href="./images/icons.svg#fb"></use></svg></a>
+            </li>
+            <li class="hamburger-social-item">
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hamburger-social-link link"
+                ><svg class="hamburger-social-icon" width="16" height="16">
+                  <use href="./images/icons.svg#linkedin"></use></svg>
+                </a>
+            </li>
+            </ul>
+          </div>
+        </div>
+
+
       </div>
     </header>
     <main>
@@ -662,5 +760,6 @@
 
     <!-- Modal JS -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
