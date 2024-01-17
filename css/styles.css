@@ -206,7 +206,17 @@ body {
   gap: 24px;
 }
 .section-list {
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 120% */
+  letter-spacing: 0.4px;
   text-align: center;
+  line-height: 1.2;
+  color: var(--secbgcolor);
+  margin-bottom: 8px;
+  
   @media screen and (min-width: 768px){
     
   font-weight: 500;
@@ -329,8 +339,12 @@ body {
 }
 .cust-header {
   text-align: center;
+  font-size: 36px;
+  line-height: 1.11;
+  color: var(--grey);
+  margin-bottom: 72px;
   @media screen and (min-width:768px){
-    font-size: 36px;
+  font-size: 36px;
   line-height: 1.11;
   color: var(--grey);
   margin-bottom: 72px;
@@ -412,7 +426,19 @@ body {
   letter-spacing: 0.02em;
   color: var(--white);
   margin-bottom: 16px;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+
+  @media screen and (min-width: 1158px) {
+  text-align: left;
+  
+  }
+
+
 }
+
 .footer-socmed-list {
   display: flex;
   gap: 16px;
@@ -441,7 +467,7 @@ body {
 } */
 .foter {
   background-color: var(--grey);
-  padding: 100px 0;
+  padding: 120px 0;
 
 }
 .foter > .container {
@@ -453,13 +479,11 @@ body {
 }
 .foter-par {
   
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
+  line-height: 1.5;
   color: #f4f4fd;
-  margin-left: 80px;
-  margin-right: 80px;
-  max-width: 268px;
+  letter-spacing: 0.02em;
+  width: 268px;
+  height: 72px;
 
   @media screen and (min-width: 768px) {
     text-align: left;
@@ -502,7 +526,10 @@ body {
 }
 
 .social-con {
+  margin: auto;
+  @media screen and (min-width: 768px) {
   margin-right: 120px;
+  }
 }
 .nav,
 .address {
@@ -525,6 +552,7 @@ body {
   display: flex;
   gap: 72px;
   flex-direction: column;
+  padding: 24px;
   
   @media screen and (min-width: 768px) {
     display: flex;
@@ -783,10 +811,36 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
+  text-align: center;
 }
 .form {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 16px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  @media screen and (min-width: 1158px) {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+.form-container
+{
+margin: auto;
+@media screen and (min-width: 768px) {
+  margin:0;
+}
+
+@media screen and (min-width: 1158px) {
+  margin:0;
+}
+
 }
 .input {
   width: 264px;
@@ -948,7 +1002,7 @@ body {
 .container {
   max-width: 428px;
   margin: 0 auto;
-  padding: 0 15px;
+  
 
   @media screen and (min-width: 768px) {
     max-width: 768px;
@@ -959,6 +1013,18 @@ body {
     
   }
 }
+.footer-wrap{
+  margin: auto;
+  @media screen and (min-width: 768px) {
+   margin: 0;
+  }
+
+  @media screen and (min-width: 1158px) {
+    margin: 0;
+    
+  }
+}
+
 .footer-container {
   display: flex;
   flex-direction: column;
