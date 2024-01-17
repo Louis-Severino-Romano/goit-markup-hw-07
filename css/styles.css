@@ -135,6 +135,9 @@ body {
 .list-svg {
   display: none;
   @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1158px) {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -207,9 +210,9 @@ body {
 }
 .section-list {
   font-family: Roboto;
-  font-size: 20px;
+  font-size: 36px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 24px; /* 120% */
   letter-spacing: 0.4px;
   text-align: center;
@@ -218,6 +221,15 @@ body {
   margin-bottom: 8px;
   
   @media screen and (min-width: 768px){
+font-family: Roboto;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 40px; /* 111.111% */
+letter-spacing: 0.72px;
+text-transform: capitalize;
+  }
+  @media screen and (min-width: 1158px){
     
   font-weight: 500;
   font-size: 20px;
@@ -279,8 +291,11 @@ body {
   background-color: #f4f4fd;
   padding: 0;
   @media screen and (min-width:768px) {
-    padding: 120px;
+  padding:0;
     
+  }
+  @media screen and (min-width:1158px){
+    padding: 120px;
   }
 }
 .section-d-list {
@@ -299,6 +314,7 @@ body {
   
     @media screen and (min-width: 768px) {
       width: calc((100% - 24px) / 2);
+      
       
     }
     @media screen and (min-width: 1158px) {
@@ -335,7 +351,10 @@ body {
 }
 /* section5 */
 .customers {
-  padding: 120px 0;
+ 
+    padding: 120px 0;
+  
+  
 }
 .cust-header {
   text-align: center;
@@ -364,6 +383,8 @@ body {
     justify-content: center;
     column-gap: 24px;
     row-gap: 72px;
+   
+    align-items: center;
   }
 
   @media screen and (min-width: 1158px) {
@@ -391,8 +412,14 @@ body {
 
   @media screen and (min-width: 768px){
   width: calc((100% - 120px) / 3);
+  
   height: 88px;
   }
+  @media screen and (min-width: 1158px){
+    
+    width: 188px;
+    height: 88px;
+    }
   
 }
 .cust-list-link {
@@ -466,6 +493,7 @@ body {
   fill: var(--fotcolor);
 } */
 .foter {
+  
   background-color: var(--grey);
   padding: 120px 0;
 
@@ -527,6 +555,7 @@ body {
 
 .social-con {
   margin: auto;
+  
   @media screen and (min-width: 768px) {
   margin-right: 120px;
   }
@@ -606,9 +635,11 @@ body {
 .list-item {
   /* margin-right: 24px;    */
   @media screen and (min-width: 768px)
-  {width: calc((100% - 72px) / 4);}
+  {width: calc((100% - 72px) / 2);}
   
-  
+  @media screen and (min-width: 1158px){
+    width: calc((100% - 72px) / 4);
+  }
 }
 .section-c {
   padding-top: 0;
@@ -632,6 +663,12 @@ body {
 .section-d-header {
   text-align: center;
   margin-bottom: 8px;
+  font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 120% */
+letter-spacing: 0.4px;
 }
 .section-d-item {
   padding: 32px 0;
@@ -805,6 +842,7 @@ body {
 }
 /* HW6 */
 .form-par {
+
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
@@ -812,6 +850,11 @@ body {
   letter-spacing: 0.02em;
   color: #ffffff;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+  
+  text-align: left;
+  }
 }
 .form {
   display: flex;
@@ -833,12 +876,14 @@ body {
 .form-container
 {
 margin: auto;
+
 @media screen and (min-width: 768px) {
-  margin:0;
+ margin: 0 0;
+  
 }
 
 @media screen and (min-width: 1158px) {
-  margin:0;
+  margin:0 0;
 }
 
 }
@@ -1006,6 +1051,7 @@ margin: auto;
 
   @media screen and (min-width: 768px) {
     max-width: 768px;
+    align-items: center;
   }
 
   @media screen and (min-width: 1158px) {
@@ -1014,9 +1060,10 @@ margin: auto;
   }
 }
 .footer-wrap{
+  
   margin: auto;
   @media screen and (min-width: 768px) {
-   margin: 0;
+   padding: 20px;
   }
 
   @media screen and (min-width: 1158px) {
@@ -1032,8 +1079,8 @@ margin: auto;
   justify-content: center;
   row-gap: 72px;
   column-gap: 0;
+  align-items: center;
 
-  
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
@@ -1061,6 +1108,7 @@ margin: auto;
     display: flex;
     gap: 40px;
     margin-left: 120px;
+
   }
 
   @media screen and (min-width: 1158px) {
